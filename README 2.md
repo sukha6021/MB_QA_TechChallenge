@@ -1,1 +1,0 @@
-# MB_QATechChallenge
