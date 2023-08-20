@@ -1,0 +1,14 @@
+{
+  "name": "qa_task_-mb.io",
+  "version": "1.0.0",
+  "description": "Validate A Class models price are between £15,000 and £60,000",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^12.17.4"
+  }
+}
