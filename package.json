@@ -4,7 +4,9 @@
   "description": "Validate A Class models price are between £15,000 and £60,000",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "cypress:open": "cypress open"
   },
   "author": "",
   "license": "ISC",
