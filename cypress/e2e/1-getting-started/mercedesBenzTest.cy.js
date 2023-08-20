@@ -7,10 +7,8 @@ describe('Mercedes-Benz Test', () => {
     cy.acceptCookies();
     // Open Mercedes-benz United Kingdom market
     cy.selectVehicleModel('Hatchback',"A-Class Hatchback");
-    
     // Filter by Fuel type “Diesel”
-    cy.filterByFuelType('Diesel');
-
+    cy.filterByFuelType();
     // Take a screenshot of the results
     cy.get('.cc-motorization-comparison-wrapper').screenshot('results');
 
@@ -24,7 +22,7 @@ describe('Mercedes-Benz Test', () => {
       const highestPrice = Math.max(...prices);
 
       expect(lowestPrice).to.be.at.least(15000);
-      expect(highestPrice).to.be.at.most(65000);
+      expect(highestPrice).to.be.at.most(60000);
     });
   });
 });

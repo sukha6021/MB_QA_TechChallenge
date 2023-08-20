@@ -13,8 +13,10 @@ Cypress.Commands.add('selectVehicleModel', (modelName,vehicleClass) => {
     cy.get(".cc-navigation__item").contains("Model").click();
 });
 
-Cypress.Commands.add('filterByFuelType', (fuelType) => {
-  cy.contains(fuelType).scrollIntoView().click({ force: true });;
+Cypress.Commands.add('filterByFuelType', () => {
+  cy.get('button .label').scrollIntoView().click({ force: true });
+  cy.get('input[type="checkbox"][name="Diesel"]').first().check({ force: true });
+  cy.get('ccwb-interactive-tag[type="secondary"][variant="button"][size="s"]').should('be.visible');
 });
 
 Cypress.Commands.add('savePricesToFile', () => {
