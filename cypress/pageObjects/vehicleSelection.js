@@ -1,3 +1,4 @@
+// Select vehicle models and Fuel
 class VehicleSelection {
   selectModel(vehicleType, modelName) {
     cy.get("p").contains("Our models").click();

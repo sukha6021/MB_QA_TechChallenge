@@ -1,6 +1,7 @@
+// Filter by Diesel and verify the output 
 class Filters {
   filterByFuelType() {
-    cy.get("button .label").scrollIntoView().click({ force: true });
+    cy.get("button .label").scrollIntoView().click({ force: true });     // Scroll to the element with the label "Fuel type"
     cy.get('input[type="checkbox"][name="Diesel"]')
       .first()
       .check({ force: true });
